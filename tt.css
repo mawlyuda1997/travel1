@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+}
+.header-content {
+  margin: 0 auto;
+
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  padding: 20px;
+  color: #3b4167;
+}
+
+.main-section h1 {
+  /* padding: 70px; */
+  /* padding-top: 300px; */
+
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-section .info {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+.language span.lang {
+  padding: 5px 10px;
+}
+
+.select {
+  padding: 5px 10px;
+  rotate: 90deg;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(217, 217, 217, 0.34) 100%
+  );
+  border-radius: 9px;
+}
+
+/* main-section - carousel */
+
+section .main-section {
+  position: relative;
+  width: 100%;
+}
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+  height: 80vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* <section class="destinations"> */
+
+.wrapper-carousel {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  /* height: 100vh; */
+}
+.destinations h2 {
+  font-family: "Inria Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  padding-left: 8%;
+}
+#wrapper {
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+#carousel img {
+  object-fit: cover;
+}
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 180px;
+  height: 180px;
+  background: green;
+}
+
+section.summer {
+  width: 100%;
+}
+.summer > .summer-rec-container {
+  width: 95%;
+  margin: 0 auto;
+}
+.summer > .summer-rec-container > .seasites {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  height: 345px;
+  width: 100%;
+}
+.summer > .summer-rec-container > .seasites > h1 {
+  width: 502px;
+  height: 140px;
+  font-family: "Inria Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: #000000;
+}
+.summer > .summer-rec-container > .seasites1 {
+  height: 345px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.summer > .summer-rec-container > .seasites1 > .Waterfall {
+  background-image: url("./image/koyten-waterfall.png");
+  background-repeat: no-repeat;
+  width: 328px;
+  color: #ffffff;
+}
+.summer > .summer-rec-container > .seasites1 > .dino-trace {
+  background-image: url("./image/dinosours-trace.png");
+  background-repeat: no-repeat;
+  width: 428px;
+  color: white;
+}
+.summer > .summer-rec-container > .seasites1 > .merv {
+  background-image: url("./image/merw.png");
+  background-repeat: no-repeat;
+  width: 396px;
+  color: #ffffff;
+}
+
+.summer > .summer-rec-container > .seasites1 > h3 {
+  width: 217px;
+  height: 29px;
+  font-family: "Inria Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  position: relative;
+}
+.summer > .summer-rec-container > .seasites1 {
+  display: flex;
+  justify-content: space-between;
+  height: 345px;
+}
+
+.summer > .summer-rec-container > .seasites2 {
+  display: flex;
+  justify-content: space-between;
+  height: 345px;
+}
+.summer > .summer-rec-container > .seasites2 > h3 {
+  width: 310px;
+  height: 76px;
+  font-family: "Inria Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.summer > .summer-rec-container > .seasites2 > .cabin-car {
+  background-image: url("./image/car.png");
+  background-repeat: no-repeat;
+  width: 780px;
+  color: white;
+}
+.summer > .summer-rec-container > .seasites2 > .serdar-yoly {
+  background-image: url("./image/saglyk-yoly.png");
+  background-repeat: no-repeat;
+  width: 396px;
+  color: #ffffff;
+}

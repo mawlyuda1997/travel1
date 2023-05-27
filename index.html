@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tt.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="header">
+      <div class="header-content">
+        <div class="logo">
+          <img
+            src="./image/Group 1.svg"
+            alt=""
+            width="100"
+            style="padding: 20px"
+          />
+        </div>
+        <nav>
+          <a href="#">Destinations</a>
+          <a href="#">Experiences</a>
+          <a href="#">Travel agencies</a>
+          <a href="#">Planning</a>
+        </nav>
+        <div class="language">
+          <span class="lang">Languages</span>
+          <div class="select">></div>
+        </div>
+      </div>
+    </div>
+    <!-- header end -->
+
+    <!-- section start -->
+    <section class="main-section">
+      <div class="info">
+        <div class="top">
+          <h1>
+            Explore<br />
+            Turkmenistan<br />
+            with us
+          </h1>
+        </div>
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="image/slide1.png">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="image/slide2.png">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="image/slide3.png">
+        </div>
+        
+       
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Dynamic Tabs</h2>
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a data-toggle="tab" href="#home">
+              <img src="image/hotel-icon.svg" alt="" />
+              Hotels</a
+            >
+          </li>
+          <li>
+            <a data-toggle="tab" href="#menu1">
+              <img src="./image/flights-icon.svg" >
+              Flights</a
+            >
+          </li>
+          <li><a data-toggle="tab" href="#menu2">
+            <img src="./image/railway-icon.svg">
+            Railway TImetable</a
+            >
+          </li>
+
+          <li><a data-toggle="tab" href="#menu3">
+          <img src="./image/car-icon.svg">
+          Car rental</a
+          ></li> 
+
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p>
+              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <h2>Top Destinations</h2>
+      <div class="wrapper">
+        <div class="wrapper-carousel">
+          <div id="wrapper">
+            <div id="carousel">
+              <div id="content">
+                <img
+                  class="item"
+                  src="image/1.png"
+                />
+                <img
+                  src="image/2.png"
+                  class="item"
+                />
+                <img
+                  src="image/3.png"
+                  class="item"
+                />
+                <img
+                  src="image/slide1.png"
+                  class="item"
+                />
+                <img
+                  src="image/slide2.png"
+                  class="item"
+                />
+                <img
+                  src="image/3.png"
+                  class="item"
+                />
+                <img
+                  src="image/slide1.png"
+                  class="item"
+                />
+                <img
+                  src="image/slide2.png"
+                  class="item"
+                />
+                
+              </div>
+            </div>
+            <button id="prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+              </svg>
+            </button>
+            <button id="next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="height: 100px;"></section>
+
+<!-- recomendation summer section -->
+<section class="summer">
+<div  class="summer-rec-container">
+  <div class="seasites">
+    <h1>Recommendation Summer</h1>
+    <img src="./image/tour-to-avaza.png">
+   </div>
+
+  <div class="seasites1">
+    <div class="Waterfall">
+        <h3>Koytendag Waterfall</h3>
+    </div>
+     <div class="dino-trace">
+        <h3>Dinosaur track</h3>
+    </div>
+    <div class="merv">
+      <h3>Ancient Merv</h3>
+    </div>
+  </div>
+
+
+<div class="seasites2">
+  <div class="cabin-car">
+      <h3>Visit Cabel Car</h3>
+  </div>
+   <div class="serdar-yoly">
+      <h3>Walking on Serdar Health Path</h3>
+  </div>
+</div>
+</section>
+
+
+
+
+<script src="script.js"></script>
+    <script src="script2.js"></script>
+
+    <!-- section end -->
+  </body>
+</html>
